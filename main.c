@@ -5,23 +5,16 @@
 //zyabcdefghijklmnopqrstuvwx
 int main()
 { 
-int alpha(abcdefghijklmnopqrstuvwxyz);
-int newaplha(zabcdefhijklmnopqrstuvwxy);
-float n;
-n = sizeof(alpha)/sizeof(alpha[0]);
-int i;
-float max= -1e30 ;
-int maxindex ;
+int a=1, b=2, c=3, d=4, e=5, f=6, g=7, h=8, i=9, j=10, k=11, l=12, m=13, n=14, o=15, p=16, q=17, r=18, s=19, t=20, u=21, v=22, w=23, x=24, y=25, z=26;
+//int newaplha(zabcdefhijklmnopqrstuvwxy);
 
-for(i=0; i<=n-1; i++){
-    
-    if(data[i]> max){
-        max = data[i];
-        maxindex = i;
-    }
-    
+
+
+printf("%d", a );
+
+
 }
-    printf("the maxium value for %f, found at %d", max, maxindex);
+
         
         
  
@@ -32,5 +25,5 @@ for(i=0; i<=n-1; i++){
     
 
 
-}
+
 
