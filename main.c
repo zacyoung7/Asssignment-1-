@@ -20,7 +20,7 @@ void CC(char* input, int key);
 
 int main(){
     
-    int key = 1 ;
+    int key = -1 ;
 	char input[200] ; // set lenght to some big number as it required a length 
 	
     scanf("%[^'\n']s", &input);  // scanning from the input file and being able to scan multiple words from a file 
@@ -45,18 +45,20 @@ void CC(char* input, int key) {
         
         while( input[i] != 0 && strlen(input) > i){             
             
-        newascii = ((int)input[i] - key - 65 ) %26  + 65  ;        // alogorithm to find the ascii number for the new letter    
-                                                                        
-            if(newascii < 65  || newascii > 91 ){  // if the ascii number isnt between these numbers it is not a letter 
+        newascii = ((int)input[i] + key + 65 ) %26  + 65 ;   // alogorithm to find the ascii number for the new letter                                                             
+
+            if(newascii < 65 || newascii > 91 ){  // if the ascii number isnt between these numbers it is not a letter 
                 
                 cipheredletter = input[i];          // by doing this it is making the ciphered text the same as the original so the cipered text will print spaces and symbols 
                 printf("%c", cipheredletter);
                 
             }                                                   
             else{
-                cipheredletter = (char)(newascii) ;   // this else statement changes the numbers that do it in between 65 and 92 whoch are all the letters so it prints the ci[hered letters]
+                cipheredletter = (char)(newascii) ;     // this else statement changes the numbers that do it in between 65 and 92 whoch are all the letters so it prints the ci[hered letters]
+
                 printf("%c", cipheredletter);
-            };                                                    
+            };
+            
 
           
         i++;  // this takes it to the next letter in the word 
@@ -73,13 +75,7 @@ void CC(char* input, int key) {
  *      change it to and from.
  */
 
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
 
-void SC(char* input);
- 
-int main(){
     
     
     
@@ -88,24 +84,7 @@ int main(){
     
     
     
-    
-void SC(char* input) {
-    
-    
-    
-    
-}
-   
-    
-    
-    
-    
-    
-    
-    
-    
-}
- 
+
  
  
     
