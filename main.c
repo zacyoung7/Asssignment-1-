@@ -2,6 +2,7 @@
    Title: Caesar Cipher
    This program takes in a plain text and produces a rotatioon cipher of that text using the key
           How it works: Suppose Letter = a = 0, b=1, c=2, d=3, e=4
+          you will need an input file where you input the text ypu either want to encript or dercript 
                 key = 1
                 so the letter a = 1 etc
                 for ascii we need to use capital letters so they are A = 65, B = 66,.... etc up to Z = 90
